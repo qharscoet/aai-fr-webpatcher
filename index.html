@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AAI-FR : Ace Attorney Investions 2 patch</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="script.mjs" defer></script>
+</head>
+
+<body>
+  <img src="assets/logo.png">
+  <p>
+    Bienvenue sur le patcheur pour AAI2 de la team <a href="https://aai-fr.keuf.net/">AAI-FR</a>
+    Le patch est proposé en 2 versions :
+    <ul>
+      <li>Une version traduite depuis la fantrad anglaise, par Anthiflo </li>
+      <li>Une version traduite depuis le japonais, par Choky</li>
+    </ul>
+  </p>
+  <section>
+    <h2>AAI2 Patch</h2>
+    <ul>
+      <li class="file-li"><label for="oldFile2">Rom Originale Japonaise: <label><input type="file" id="oldFile2" /></li>
+      <li class="file-li">
+        <label for="aai2-version">Sélectionnez le patch à appliquer:</label>
+        <select name="patchFile" id="aai2-version">
+            <option value="">--Please choose an option--</option>
+            <option value="from_en">Depuis la fantrad EN</option>
+            <option value="from_jp">Depuis le JP</option>
+        </select>
+      </li>
+      <li class="button-li"><button id="bspatch">run</button></li>
+    </ul>
+    </section>
+
+    <footer>
+      <a href="https://github.com/kairi003/bsdiff-wasm">bsdiff-wasm</a>
+      by <a href="https://github.com/kairi003">kairi003</a>.
+    </footer>
+</body>
+
+</html>
